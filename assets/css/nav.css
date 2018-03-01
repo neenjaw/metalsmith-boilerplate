@@ -1,0 +1,262 @@
+/* 
+ * Nav CSS Rules
+ */
+
+.nav-items a {
+    outline: 0;
+}
+
+.nav-items>li>a:focus::before {
+    content: "[ "
+}
+
+.nav-items>li>a:focus::after {
+    content: " ]"
+}
+
+@media screen and (max-width: 659px) {
+    .background {
+        display: none;
+    }
+    .nav-items {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        background-color: var(--dark-bg-color);
+    }
+    .nav-items li {
+        list-style: none;
+        padding: 10px 0;
+    }
+    .nav-items>li {
+        flex-basis: 140px;
+        text-align: center;
+    }
+    .nav-items>li>a {
+        color: var(--light-on-dark-color);
+        font-weight: 700;
+        text-decoration: none;
+    }
+    .nav-items>li:hover>a::before {
+        content: "[ "
+    }
+    .nav-items>li:hover>a::after {
+        content: " ]"
+    }
+    .nav-items li:hover {
+        background-color: var(--dark-bg-accent);
+    }
+    .dropdown {
+        display: none;
+        transition: all 0.2 ease-in-out;
+    }
+    .nav-items li:hover>.dropdown {
+        display: block;
+        position: absolute;
+        top: 2.4em;
+        left: 0px;
+        margin: 0;
+        padding: 0;
+        width: 100vw;
+        text-align: left;
+        color: var(--light-on-dark-color);
+        background-color: var(--dark-bg-accent);
+        box-shadow: 0 50px 100px rgba(50, 50, 93, .1), 0 15px 35px rgba(50, 50, 93, .15), 0 5px 15px rgba(0, 0, 0, .1);
+    }
+    .dropdown a {
+        color: var(--light-on-dark-color);
+    }
+    .bio {
+        margin: 0;
+        padding: 15px 15px;
+    }
+    .bio img {
+        float: left;
+        width: 30vw;
+        height: 30vw;
+        border: 1px solid black;
+        box-shadow: 0 50px 100px rgba(192, 192, 230, 0.1);
+        margin: 0 15px 15px 0;
+    }
+    .bio p {
+        margin: 0;
+    }
+    .blog>li {
+        padding: 5px 0 5px 15px;
+    }
+    .blog span {
+        font-weight: 700;
+    }
+    .blog span:after {
+        font-family: "Font Awesome 5 Free";
+        font-style: normal;
+        font-variant: normal;
+        text-rendering: auto;
+        display: inline;
+        font-size: 16px;
+        line-height: 18px;
+        padding: 0px 5px 0px 7px;
+        content: "\f0da";
+    }
+    .blog a {
+        transition: color 0.2s ease-in-out;
+    }
+    .blog a:hover {
+        color: var(--light-on-dark-accent);
+    }
+    .blog>li:first-child {
+        padding-top: 15px;
+    }
+    .blog>li:last-child {
+        padding-bottom: 15px;
+    }
+    .nav-items li:hover>.dropdown.links {
+        display: flex;
+        flex-direction: row;
+    }
+    .nav-items li:hover>.dropdown.links>* {
+        flex-basis: 25%;
+        text-align: center;
+        padding: 15px;
+        font-size: 50px;
+    }
+    .button {
+        transition: color 0.2s ease-in-out;
+    }
+    .button:hover {
+        color: var(--light-on-dark-accent);
+    }
+}
+
+@media screen and (min-width: 660px) {
+    nav {
+        perspective: 600px;
+    }
+    .nav-items>li>a {
+        color: var(--light-on-dark-color);
+        text-decoration: none;
+        font-size: 20px;
+        background: var(--dark-bg-color);
+        padding: 10px 20px;
+        display: inline-block;
+        margin: 20px;
+        border-radius: 5px;
+    }
+    nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+    }
+    .nav-items>li {
+        position: relative;
+        display: flex;
+        justify-content: center;
+    }
+    .dropdown {
+        opacity: 0;
+        position: absolute;
+        overflow: hidden;
+        padding: 20px;
+        top: -20px;
+        border-radius: 2px;
+        transition: all 0.5s;
+        transform: translateY(100px);
+        will-change: opacity;
+        display: none;
+    }
+    .enter .dropdown {
+        display: block;
+    }
+    .active .dropdown {
+        opacity: 1;
+    }
+    .background {
+        width: var(--dropdown-width);
+        height: var(--dropdown-height);
+        position: absolute;
+        background: #fff;
+        border-radius: 4px;
+        box-shadow: 0 50px 100px rgba(50, 50, 93, .1), 0 15px 35px rgba(50, 50, 93, .15), 0 5px 15px rgba(0, 0, 0, .1);
+        transform-origin: 50% top;
+        transform: rotateX(-30deg) translate(var(--dropdown-left), var(--dropdown-top));
+        display: flex;
+        justify-content: center;
+        opacity: 0;
+    }
+    .background.open {
+        transition: all 0.1s linear, opacity 0.1s linear, transform 0.2s ease-in-out;
+    }
+    .background.open.active {
+        transform: rotateX(0deg) translate(var(--dropdown-left), var(--dropdown-top));
+        opacity: 1;
+    }
+    .arrow {
+        position: relative;
+        /* z-index: 5; */
+        height: 0;
+        width: 0;
+        /* box-shadow: 0 50px 100px rgba(50, 50, 93, .1), 0 15px 35px rgba(50, 50, 93, .15), 0 5px 15px rgba(0, 0, 0, .1); */
+        border-left: 15px solid transparent;
+        border-right: 15px solid transparent;
+        border-bottom: 15px solid white;
+        border-top: 15px solid transparent;
+        transform: translateY(-30px);
+        /* width: 30px;
+        height: 30px;
+        display: block;
+        background: white;
+        transform: translateY(-50%) rotate(45deg); */
+    }
+    .bio {
+        min-width: 350px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        line-height: 1.7;
+    }
+    .bio img {
+        border: 1px solid grey;
+        height: 80px;
+        width: 80px;
+        margin-top: 28px;
+        margin-right: 20px;
+    }
+    .blog {
+        min-width: 200px;
+    }
+    .blog li {
+        padding: 10px 0;
+        display: block;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    }
+    .blog li:last-child {
+        border-bottom: 0;
+    }
+    .blog li span {
+        display: block;
+    }
+    .dropdown a {
+        text-decoration: none;
+        color: var(--light-on-dark-accent);
+        transition: color 0.2s ease-in-out;
+    }
+    .dropdown a:hover {
+        text-decoration: none;
+        color: black;
+    }
+    a.button {
+        font-size: 50px;
+        background: transparent;
+        display: block;
+        color: var(--light-on-dark-accent);
+        transition: color 0.2 ease-in-out;
+    }
+    a.button:hover {
+        color: black;
+    }
+}
