@@ -17,20 +17,20 @@ Handlebars.registerHelper('is', function (value, test, options) {
 });
 
 Handlebars.registerHelper('date', function (date) {
-    return moment(date, "MM-DD-YYYY").format('Do MMM \'YY');
+    return moment(date, 'MM-DD-YYYY').format('Do MMM \'YY');
 });
 
 metalsmith(__dirname)
     .metadata({
         site: {
             name: 'neenjaw.com',
-            description: "Views on web development, programming, life by a neenjaw.",
-            generatorname: "Metalsmith",
-            generatorurl: "http://metalsmith.io/",
-            generatortitle: "Check out Metalsmith!",
-            hostname: "Netlify",
-            hosturl: "https://netlify.com/",
-            hosttitle: "Learn more about Netlify"
+            description: 'Views on web development, programming, life by a neenjaw.',
+            generatorname: 'Metalsmith',
+            generatorurl: 'http://metalsmith.io/',
+            generatortitle: 'Check out Metalsmith!',
+            hostname: 'Netlify',
+            hosturl: 'https://netlify.com/',
+            hosttitle: 'Learn more about Netlify'
         }
     })
     .source('./src')
@@ -57,7 +57,7 @@ metalsmith(__dirname)
         partials: 'layouts/partials'
     }))
     .use(sitemap({
-        hostname: "https://neenjaw.com"
+        hostname: 'https://neenjaw.com'
     }))
     .build(function (err) {
         if (err) throw err;
