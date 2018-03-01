@@ -1,0 +1,138 @@
+:root {
+    --light-on-dark-color: ghostwhite;
+    --light-on-dark-accent: #61647a;
+    --dark-bg-color: black;
+    --dark-bg-accent: #333744;
+}
+
+html {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #304352;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #3A3633, #BFABA0);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #3A3633, #BFABA0);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-position: center bottom;
+    background-image: url("../image/eberhard-grossgasteiger-521851.jpg");
+    /* Photo by eberhard grossgasteiger on Unsplash */
+    font-family: 'Crimson Text', serif;
+    font-size: 18px;
+}
+
+.wrapper {
+    background-color: rgba(255, 255, 255, 0.8);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    overflow-x: hidden;
+}
+
+.wrapper header {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wrapper header h1 {
+    font-size: 70px;
+    font-weight: 400;
+    margin: 0;
+    padding: 15px 15px 15px 45px;
+}
+
+.wrapper header nav {
+    margin-right: 25px;
+}
+
+.wrapper main {
+    padding: 50px 45px;
+    flex: 1;
+}
+
+.wrapper footer {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (max-width: 659px) {
+    .wrapper header {
+        flex-direction: column-reverse;
+        align-items: stretch;
+        justify-content: flex-end;
+    }
+    .wrapper header h1 {
+        margin: 0;
+        padding: 10px;
+        align-self: center;
+    }
+    .wrapper header nav {
+        margin: 0;
+    }
+}
+
+/* 
+ *  Contact Link CSS Rules
+ */
+
+.contact {
+    display: inline-block;
+    list-style: none;
+    margin: 8px;
+    padding: 9px 9px 4px 9px;
+    border-radius: 5px;
+    background-color: var(--dark-bg-color);
+    color: var(--light-on-dark-color);
+    font-weight: 700;
+}
+
+.contact .link {
+    display: inline-block;
+    width: 67px;
+    text-align: center;
+    transition: width 0.2s ease-in-out;
+}
+
+.contact .link a {
+    text-decoration: none;
+    color: var(--light-on-dark-color);
+}
+
+.contact .link.link-active {
+    animation: link-font-fade 0.4s;
+    width: 154px;
+}
+
+@keyframes link-font-fade {
+    0% {
+        color: var(--light-on-dark-color);
+    }
+    50% {
+        color: var(--dark-bg-color);
+    }
+    100% {
+        color: var(--light-on-dark-color);
+    }
+}

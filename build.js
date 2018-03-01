@@ -23,8 +23,8 @@ Handlebars.registerHelper('date', function (date) {
 metalsmith(__dirname)
     .metadata({
         site: {
-            name: 'My site',
-            description: "My super sweet Metalsmith site on Netlify.",
+            name: 'neenjaw.com',
+            description: "Views on web development, programming, life by a neenjaw.",
             generatorname: "Metalsmith",
             generatorurl: "http://metalsmith.io/",
             generatortitle: "Check out Metalsmith!",
@@ -57,7 +57,7 @@ metalsmith(__dirname)
         partials: 'layouts/partials'
     }))
     .use(sitemap({
-        hostname: "https://andreasvirkus.me"
+        hostname: "https://neenjaw.com"
     }))
     .build(function (err) {
         if (err) throw err;
