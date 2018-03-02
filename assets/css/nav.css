@@ -6,14 +6,6 @@
     outline: 0;
 }
 
-.nav-items>li>a:focus::before {
-    content: "[ "
-}
-
-.nav-items>li>a:focus::after {
-    content: " ]"
-}
-
 @media screen and (max-width: 659px) {
     .background {
         display: none;
@@ -39,15 +31,19 @@
         font-weight: 700;
         text-decoration: none;
     }
-    .nav-items>li:hover>a::before {
+
+    .nav-items>li>a:focus::before, .nav-items>li:hover>a::before {
         content: "[ "
     }
-    .nav-items>li:hover>a::after {
+
+    .nav-items>li>a:focus::after, .nav-items>li:hover>a::after {
         content: " ]"
     }
+
     .nav-items li:hover {
         background-color: var(--dark-bg-accent);
     }
+    
     .dropdown {
         display: none;
         transition: all 0.2 ease-in-out;
