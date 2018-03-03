@@ -4,8 +4,6 @@ layout: post.hbs
 description: Code Journal
 date: 02-26-2018
 ---
-# Feb 26
-
 - Web dev bootcamp - Yelpcamp:
   - More work done on the user profiles
   - Admin panel routes added
