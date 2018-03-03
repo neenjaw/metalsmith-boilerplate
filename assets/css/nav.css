@@ -2,15 +2,15 @@
  * Nav CSS Rules
  */
 
-.nav-items a {
+.nav__items a {
     outline: 0;
 }
 
 @media screen and (max-width: 659px) {
-    .background {
+    .nav__background {
         display: none;
     }
-    .nav-items {
+    .nav__items {
         display: flex;
         justify-content: space-around;
         width: 100%;
@@ -18,37 +18,37 @@
         padding: 0; 
         background-color: var(--dark-bg-color);
     }
-    .nav-items li {
+    .nav__items li {
         list-style: none;
         padding: 10px 0;
     }
-    .nav-items>li {
+    .nav__items>li {
         flex-basis: 140px;
         text-align: center;
     }
-    .nav-items>li>a {
+    .nav__items>li>a {
         color: var(--light-on-dark-color);
         font-weight: 700;
         text-decoration: none;
     }
 
-    .nav-items>li>a:focus::before, .nav-items>li:hover>a::before {
+    .nav__items>li>a:focus::before, .nav__items>li:hover>a::before {
         content: "[ "
     }
 
-    .nav-items>li>a:focus::after, .nav-items>li:hover>a::after {
+    .nav__items>li>a:focus::after, .nav__items>li:hover>a::after {
         content: " ]"
     }
 
-    .nav-items li:hover {
+    .nav__items li:hover {
         background-color: var(--dark-bg-accent);
     }
     
-    .dropdown {
+    .nav__dropdown {
         display: none;
         transition: all 0.2 ease-in-out;
     }
-    .nav-items li:hover>.dropdown {
+    .nav__items li:hover>.nav__dropdown {
         display: block;
         position: absolute;
         top: 2.4em;
@@ -61,14 +61,14 @@
         background-color: var(--dark-bg-accent);
         box-shadow: 0 50px 100px rgba(50, 50, 93, .1), 0 15px 35px rgba(50, 50, 93, .15), 0 5px 15px rgba(0, 0, 0, .1);
     }
-    .dropdown a {
+    .nav__dropdown a {
         color: var(--light-on-dark-color);
     }
-    .bio {
+    .nav__bio {
         margin: 0;
         padding: 15px 15px;
     }
-    .bio img {
+    .nav__bio img {
         float: left;
         width: 30vw;
         height: 30vw;
@@ -76,16 +76,16 @@
         box-shadow: 0 50px 100px rgba(192, 192, 230, 0.1);
         margin: 0 15px 15px 0;
     }
-    .bio p {
+    .nav__bio p {
         margin: 0;
     }
-    .blog>li {
+    .nav__blog>li {
         padding: 5px 0 5px 15px;
     }
-    .blog span {
+    .nav__blog span {
         font-weight: 700;
     }
-    .blog span:after {
+    .nav__blog span:after {
         font-family: "Font Awesome 5 Free";
         font-style: normal;
         font-variant: normal;
@@ -96,41 +96,41 @@
         padding: 0px 5px 0px 7px;
         content: "\f0da";
     }
-    .blog a {
+    .nav__blog a {
         transition: color 0.2s ease-in-out;
     }
-    .blog a:hover {
+    .nav__blog a:hover {
         color: var(--light-on-dark-accent);
     }
-    .blog>li:first-child {
+    .nav__blog>li:first-child {
         padding-top: 15px;
     }
-    .blog>li:last-child {
+    .nav__blog>li:last-child {
         padding-bottom: 15px;
     }
-    .nav-items li:hover>.dropdown.links {
+    .nav__nav-items li:hover>.nav__dropdown.nav__links {
         display: flex;
         flex-direction: row;
     }
-    .nav-items li:hover>.dropdown.links>* {
+    .nav__nav-items li:hover>.nav__dropdown.nav__links>* {
         flex-basis: 25%;
         text-align: center;
         padding: 15px;
         font-size: 50px;
     }
-    .button {
+    .nav__button {
         transition: color 0.2s ease-in-out;
     }
-    .button:hover {
+    .nav__button:hover {
         color: var(--light-on-dark-accent);
     }
 }
 
 @media screen and (min-width: 660px) {
-    nav {
+    .nav__wrapper {
         perspective: 600px;
     }
-    .nav-items>li>a {
+    .nav__items>li>a {
         color: var(--light-on-dark-color);
         text-decoration: none;
         font-size: 20px;
@@ -140,19 +140,19 @@
         margin: 20px;
         border-radius: 5px;
     }
-    nav ul {
+    .nav__wrapper ul {
         list-style: none;
         margin: 0;
         padding: 0;
         display: flex;
         justify-content: center;
     }
-    .nav-items>li {
+    .nav__items>li {
         position: relative;
         display: flex;
         justify-content: center;
     }
-    .dropdown {
+    .nav__dropdown {
         opacity: 0;
         position: absolute;
         overflow: hidden;
@@ -164,13 +164,13 @@
         will-change: opacity;
         display: none;
     }
-    .enter .dropdown {
+    .nav__enter .nav__dropdown {
         display: block;
     }
-    .active .dropdown {
+    .nav__active .nav__dropdown {
         opacity: 1;
     }
-    .background {
+    .nav__background {
         width: var(--dropdown-width);
         height: var(--dropdown-height);
         position: absolute;
@@ -183,14 +183,14 @@
         justify-content: center;
         opacity: 0;
     }
-    .background.open {
+    .nav__background.nav__open {
         transition: all 0.1s linear, opacity 0.1s linear, transform 0.2s ease-in-out;
     }
-    .background.open.active {
+    .nav__background.nav__open.nav__active {
         transform: rotateX(0deg) translate(var(--dropdown-left), var(--dropdown-top));
         opacity: 1;
     }
-    .arrow {
+    .nav__arrow {
         position: relative;
         /* z-index: 5; */
         height: 0;
@@ -207,7 +207,7 @@
         background: white;
         transform: translateY(-50%) rotate(45deg); */
     }
-    .bio {
+    .nav__bio {
         min-width: 350px;
         display: flex;
         flex-direction: row;
@@ -215,44 +215,44 @@
         align-items: flex-start;
         line-height: 1.7;
     }
-    .bio img {
+    .nav__bio img {
         border: 1px solid grey;
         height: 80px;
         width: 80px;
         margin-top: 28px;
         margin-right: 20px;
     }
-    .blog {
+    .nav__blog {
         min-width: 200px;
     }
-    .blog li {
+    .nav__blog li {
         padding: 10px 0;
         display: block;
         border-bottom: 1px solid rgba(0, 0, 0, 0.2);
     }
-    .blog li:last-child {
+    .nav__blog li:last-child {
         border-bottom: 0;
     }
-    .blog li span {
+    .nav__blog li span {
         display: block;
     }
-    .dropdown a {
+    .nav__dropdown a {
         text-decoration: none;
         color: var(--light-on-dark-accent);
         transition: color 0.2s ease-in-out;
     }
-    .dropdown a:hover {
+    .nav__dropdown a:hover {
         text-decoration: none;
         color: black;
     }
-    a.button {
+    a.nav__button {
         font-size: 50px;
         background: transparent;
         display: block;
         color: var(--light-on-dark-accent);
         transition: color 0.2 ease-in-out;
     }
-    a.button:hover {
+    a.nav__button:hover {
         color: black;
     }
 }

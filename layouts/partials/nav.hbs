@@ -16,16 +16,16 @@
 
 --}}
 
-<nav class="neenjaw-nav">
-    <div class="background">
-        <span class="arrow"></span>
+<nav class="nav__wrapper">
+    <div class="nav__background">
+        <span class="nav__arrow"></span>
     </div>
 
-    <ul class="nav-items">
+    <ul class="nav__items">
         <li>
             <a href="#">about</a>
-            <div class="dropdown dropdown1">
-                <div class="bio">
+            <div class="nav__dropdown dropdown1">
+                <div class="nav__bio">
                     <img src="https://avatars.githubusercontent.com/neenjaw">
                     <p>Tim is rediscovering his love for the web, programming, application development. Background in Computer
                         Science, currently working as a Registered Nurse in Calgary, AB.</p>
@@ -34,7 +34,7 @@
         </li>
         <li>
             <a href="#">blog</a>
-            <ul class="dropdown blog">
+            <ul class="nav__dropdown nav__blog">
                 {{# each collections.lastPosts }}
                     <li class="{{#is this.path @root.path }}active{{/is}}">
                         <span class="entry ">{{ dotdate this.date }}</span>
@@ -47,29 +47,28 @@
             <a href="#">
                 <i class="fas fa-link"></i>
             </a>
-            <ul class="dropdown links">
+            <ul class="nav__dropdown nav__links">
                 <li>
-                    <a class="button" href="https://twitter.com/C8H11NO3">
+                    <a class="nav__button" href="https://twitter.com/C8H11NO3">
                         <i class="fab fa-twitter-square"></i>
                     </a>
                 </li>
                 <li>
-                    <a class="button" href="https://www.facebook.com/t.j.austin">
+                    <a class="nav__button" href="https://www.facebook.com/t.j.austin">
                         <i class="fab fa-facebook-square"></i>
                     </a>
                 </li>
                 <li>
-                    <a class="button" href="https://github.com/neenjaw">
+                    <a class="nav__button" href="https://github.com/neenjaw">
                         <i class="fab fa-github-square"></i>
                     </a>
                 </li>
                 <li>
-                    <a class="button" href="https://plus.google.com/+TimAustin">
+                    <a class="nav__button" href="https://plus.google.com/+TimAustin">
                         <i class="fab fa-google-plus-square"></i>
                     </a>
                 </li>
             </ul>
-    </ul>
-    </li>
+        </li>
     </ul>
 </nav>

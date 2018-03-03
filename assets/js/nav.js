@@ -3,7 +3,7 @@ const Nav = (function () {
     //reference vars
     const config = {
         nav: {
-            selector: '.neenjaw-nav',
+            selector: '.nav__nav',
             prop: {
                 width: '--dropdown-width',
                 height: '--dropdown-height',
@@ -12,17 +12,17 @@ const Nav = (function () {
             }
         },
         dropdowns: {
-            selector: '.nav-items > li',
+            selector: '.nav__items > li',
             class: {
-                enter: 'enter',
-                active: 'active',
+                enter: 'nav__enter',
+                active: 'nav__active',
             }
         },
         background: {
-            selector: '.background',
+            selector: '.nav__background',
             class: {
-                open: 'open',
-                active: 'active'
+                open: 'nav__open',
+                active: 'nav__active'
             }
         }
     };
@@ -36,7 +36,7 @@ const Nav = (function () {
 
     function handleEnter() {
         // get the dropdown associated with the mouseenter event
-        const dropdown = this.querySelector('.dropdown');
+        const dropdown = this.querySelector('.nav__dropdown');
 
         // start the drop down animation
         this.classList.add(config.dropdowns.class.enter);
