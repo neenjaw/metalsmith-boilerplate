@@ -1,5 +1,5 @@
 ---
-title: Code Journal: Feb 5
+title: Code Journal - Feb 5
 layout: post.hbs
 description: Code Journal
 date: 02-5-2018

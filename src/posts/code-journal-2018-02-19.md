@@ -1,10 +1,9 @@
 ---
-title: Code Journal: Feb 19
+title: Code Journal - Feb 19
 layout: post.hbs
 description: Code Journal
 date: 02-26-2018
 ---
-
 # Feb 19
 
 - Flex-box idea to fix the yelp-camp cards
