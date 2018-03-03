@@ -1,18 +1,27 @@
 {{> doc-head }}
-<link href="/assets/css/blog.css" rel="stylesheet">
+
 <body>
-    {{> header }}
+    <div class="wrapper">
+        {{> header }}
 
-    <main>
+        <main>
 
-        <h1>{{ title }}</h1>
-        <p>{{ description }}</p>
+            <h1>{{ title }}</h1>
+            <p>{{ description }}</p>
+            
+            <hr class="blog__title-divider">
 
-        <hr class="blog__title-divider">
+            {{{ contents }}}
+            
+            {{> blog-nav }}
 
-        {{{ contents }}}
-    </main>
+        </main>
 
-    {{> footer }}
+        {{> footer }}
+
+    </div>
+
+    {{> script }}
 </body>
+
 </html>

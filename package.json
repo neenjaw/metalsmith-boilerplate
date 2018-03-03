@@ -1,32 +1,41 @@
 {
-  "name": "metalsmith-netlify-boilerplate",
+  "name": "neenjaw-metalsmith",
   "version": "1.0.0",
-  "description": "A setup to get you going on Netlify with a Metalsmith static site.",
+  "description": "neenjaw.com built with metalsmith",
   "main": "build.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "prestart": "npm install",
-    "start": "node . && npm run postbuild",
-    "postbuild": "npm run copy-assets && npm run minify",
-    "copy-assets": "cp -r assets dist/ && cp robots.txt dist/ && cp manifest.json dist/ && cp service-worker.js dist/",
-    "minify": "npm run minify:js && npm run minify:css",
-    "minify:js": "uglifyjs ./dist/assets/js/*.js -c -m -o ./dist/assets/js/script.min.js",
-    "minify:css": "cleancss --level 2 -o ./dist/assets/css/styles.min.css ./dist/assets/css/*.css && postcss ./dist/assets/css/styles.min.css --use autoprefixer -o ./dist/assets/css/styles.min.css"
+    "clean": "rm -rf dist",
+    "dev": "set NODE_ENV=development && gulp",
+    "dev-makebuild": "node build.js",
+    "dev-postbuild": "npm run dev-copy-assets && npm run dev-minify",
+    "dev-copy-assets": "cp -r assets dist/ && cp robots.txt dist/ && cp manifest.json dist/ && cp service-worker.js dist/ ",
+    "dev-minify": "npm run dev-minify:js && npm run dev-minify:css",
+    "dev-minify:js": "rm -f ./dist/assets/js/script.min.js && uglifyjs ./dist/assets/js/*.js -c -m -o ./dist/assets/js/script.min.js",
+    "dev-minify:css": "cleancss --level 2 -o ./dist/assets/css/styles.min.css ./dist/assets/css/*.css && postcss ./dist/assets/css/styles.min.css --use autoprefixer -o ./dist/assets/css/styles.min.css",
+    "start": "set NODE_ENV=production && npm run prod-makebuild && npm run prod-postbuild",
+    "prod-makebuild": "node build.js",
+    "prod-postbuild": "npm run prod-copy-assets && npm run prod-minify",
+    "prod-copy-assets": "cp -r assets dist/ && cp robots.txt dist/ && cp manifest.json dist/ && cp service-worker.js dist/ ",
+    "prod-minify": "npm run prod-minify:js && npm run prod-minify:css",
+    "prod-minify:js": "rm -f ./dist/assets/js/script.min.js && uglifyjs ./dist/assets/js/*.js -c -m -o ./dist/assets/js/script.min.js",
+    "prod-minify:css": "cleancss --level 2 -o ./dist/assets/css/styles.min.css ./dist/assets/css/*.css && postcss ./dist/assets/css/styles.min.css --use autoprefixer -o ./dist/assets/css/styles.min.css"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/andreasvirkus/metalsmith-boilerplate.git"
+    "url": "git+https://github.com/neenjaw/neenjaw-metalsmith.git"
   },
   "keywords": [
+    "neenjaw",
+    "static site",
     "metalsmith",
-    "base",
-    "template",
     "netlify"
   ],
-  "author": "https://github.com/andreasvirkus",
+  "author": "https://github.com/neenjaw",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/andreasvirkus/metalsmith-boilerplate/issues"
+    "url": "https://github.com/neenjaw/neenjaw-metalsmith/issues"
   },
   "dependencies": {
     "autoprefixer": "^7.1.1",
@@ -34,15 +43,23 @@
     "handlebars": "^4.0.8",
     "metalsmith": "^2.3.0",
     "metalsmith-autoprefixer": "^1.1.1",
+    "metalsmith-browser-sync": "^1.1.1",
     "metalsmith-collections": "^0.9.0",
     "metalsmith-drafts": "0.0.1",
+    "metalsmith-html-minifier": "^3.0.0",
     "metalsmith-layouts": "^1.8.1",
     "metalsmith-markdown": "^0.2.1",
     "metalsmith-navigation": "^0.2.9",
     "metalsmith-permalinks": "^0.5.0",
     "metalsmith-sitemap": "^1.2.0",
+    "metalsmith-word-count": "0.0.4",
     "moment": "^2.18.1",
     "postcss-cli": "^4.0.0",
-    "uglify-js": "^3.0.10"
+    "uglify-es": "^3.3.9"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.23.6",
+    "gulp": "github:gulpjs/gulp#4.0",
+    "gulp-run-command": "0.0.9"
   }
 }

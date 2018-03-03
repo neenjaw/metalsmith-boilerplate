@@ -1,11 +1,20 @@
 {{> doc-head }}
+
 <body>
-    {{> header }}
+    <div class="wrapper">
+        {{> header }}
 
-    <main>
-        {{{ contents }}}
-    </main>
+        <main>
 
-    {{> footer }}
+            {{{ contents }}}
+
+        </main>
+
+        {{> footer }}
+
+    </div>
+
+    {{> script }}
 </body>
+
 </html>
