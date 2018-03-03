@@ -19,6 +19,7 @@ The WEbdev course is starting to refactor yelp camp into modules and it’s star
 Did some reading today about some of the newer iterations of the C language (C2 and Dlang) and it’s interesting because I can see how some people would like some of the advantages of newer language constructs.  I do remember liking C a lot because it gave an incredible amount of control, and at the same time hating how janky the make files all felt.  Will have to see, I have not been doign really any systems or application coding right now, but good to keep on things
 
 Todo Thoughts:
+
 - Haskell and yesod
 - Phoenix and elixer
 - Python and flask and sqlalchemy
