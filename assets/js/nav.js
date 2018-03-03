@@ -3,7 +3,7 @@ const Nav = (function () {
     //reference vars
     const config = {
         nav: {
-            selector: '.nav__nav',
+            selector: '.nav__wrapper',
             prop: {
                 width: '--dropdown-width',
                 height: '--dropdown-height',
