@@ -2,7 +2,7 @@
 title: Code Journal - Feb 4
 layout: post.hbs
 description: Code Journal
-date: 02-4-2018
+date: 02-04-2018
 ---
 # Feb 4
 

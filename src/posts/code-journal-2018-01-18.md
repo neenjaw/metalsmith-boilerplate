@@ -32,7 +32,7 @@ db._collection_path_
     }
   )
 
-- db._collection_path_.remove({match criteria})[.limit(n)]
+db._collection_path_.remove({match criteria})[.limit(n)]
 ```
 
 ## Commentary

@@ -79,7 +79,8 @@ const ms = metalsmith(dir.base)
         lastPosts: {
             pattern: 'posts/*.md',
             sortBy: 'date',
-            limit: 5
+            limit: 5,
+            reverse: true
         },
         pages: {
             pattern: '*.md',
