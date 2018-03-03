@@ -1,122 +1,20 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>neenjaw.</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Crimson+Text:400,700" rel="stylesheet">
-    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" media="screen" href="/assets/css/styles.min.css">
-</head>
+{{> doc-head }}
 
 <body>
     <div class="wrapper">
-        <header>
-            <h1 class="title">neenjaw.</h1>
-            <nav class="neenjaw-nav">
-                <div class="background">
-                    <span class="arrow"></span>
-                </div>
-
-                <ul class="nav-items">
-                    <li>
-                        <a href="#">about</a>
-                        <div class="dropdown dropdown1">
-                            <div class="bio">
-                                <img src="https://avatars.githubusercontent.com/neenjaw">
-                                <p>Tim is rediscovering his love for the web, programming, application development. Background
-                                    in Computer Science, currently working as a Registered Nurse in Calgary, AB.</p>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <a href="#">blog</a>
-                        <ul class="dropdown blog">
-                            <li>
-                                <span class="entry">2018 . 02 . 23</span>
-                                <a href="#">Major Website Update</a>
-                            </li>
-                            <li>
-                                <span class="entry">2018 . 02 . 22</span>
-                                <a href="#">Continued Growth as a Webdev</a>
-                            </li>
-                            <li>
-                                <span class="entry">2018 . 02 . 21</span>
-                                <a href="#">What I did this weekend...</a>
-                            </li>
-                            <li>
-                                <span class="entry">2018 . 02 . 20</span>
-                                <a href="#">How does this all tie in together...</a>
-                            </li>
-                            <li>
-                                <span class="entry">2018 . 02 . 19</span>
-                                <a href="#">Hmm. Adulting...</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="fas fa-link"></i>
-                        </a>
-                        <ul class="dropdown links">
-                            <li>
-                                <a class="button" href="https://twitter.com/C8H11NO3">
-                                    <i class="fab fa-twitter-square"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a class="button" href="https://www.facebook.com/t.j.austin">
-                                    <i class="fab fa-facebook-square"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a class="button" href="https://github.com/neenjaw">
-                                    <i class="fab fa-github-square"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a class="button" href="https://plus.google.com/+TimAustin">
-                                    <i class="fab fa-google-plus-square"></i>
-                                </a>
-                            </li>
-                        </ul>
-                </ul>
-                </li>
-                </ul>
-            </nav>
-        </header>
+        {{> header }}
 
         <main>
-            <p>
-                Welcome.
-            </p>
-            <p>
-                Please check back for more content later. Current plans:
-            </p>
-            <ul>
-                <li>blog.</li>
-                <li>reading list.</li>
-                <li>link list.</li>
-            </ul>
+            
+            {{{ contents }}}
+
         </main>
 
-        <footer>
-            <ul class="contact">
-                <li>[
-                    <span class="link">contact</span>]</li>
-            </ul>
-        </footer>
+        {{> footer }}
+        
     </div>
 
-    <script src="/assets/js/script.min.js"></script>
-    <script>
-        Nav.init();
-    </script>
-    <script>
-        // 'serviceWorker' in navigator && navigator.serviceWorker.register('/service-worker.js');
-    </script>
+    {{> script }}
 </body>
 
 </html>

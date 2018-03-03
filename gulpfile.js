@@ -19,4 +19,4 @@ gulp.task('dev-makebuild', run('npm run dev-makebuild'));
 
 gulp.task('dev-postbuild', run('npm run dev-postbuild'));
 
-gulp.task('dev-default', gulp.series('dev-makebuild', 'dev-postbuild', 'serve'));
+gulp.task('default', gulp.series('dev-makebuild', 'dev-postbuild', 'serve'));

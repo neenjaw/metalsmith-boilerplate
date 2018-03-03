@@ -45,7 +45,7 @@ const siteMeta = {
     hostname: 'Netlify',
     hosturl: 'https://netlify.com/',
     hosttitle: 'Learn more about Netlify',
-    domain: devBuild ?'http://127.0.0.1': 'https://neenjaw.com'
+    domain: devBuild ? 'http://127.0.0.1' : 'https://neenjaw.com'
 };
 
 Handlebars.registerHelper('is', function (value, test, options) {
@@ -60,6 +60,10 @@ Handlebars.registerHelper('date', function (date) {
     return moment(date, 'MM-DD-YYYY').format('Do MMM \'YY');
 });
 
+Handlebars.registerHelper('dotdate', function (date) {
+    return moment(date, 'MM-DD-YYYY').format('YYYY . MM . DD');
+});
+
 const ms = metalsmith(dir.base)
     .metadata(siteMeta)
     .source(dir.source)
@@ -71,6 +75,11 @@ const ms = metalsmith(dir.base)
             pattern: 'posts/*.md',
             sortBy: 'date',
             reverse: true
+        },
+        lastPosts: {
+            pattern: 'posts/*.md',
+            sortBy: 'date',
+            limit: 5
         },
         pages: {
             pattern: '*.md',
