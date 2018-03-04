@@ -3,6 +3,8 @@
     --light-on-dark-accent: #61647a;
     --dark-bg-color: black;
     --dark-bg-accent: #333744;
+
+    --accent-font: 'Crimson Text', serif;
 }
 
 html {
@@ -35,7 +37,6 @@ body {
     background-position: center bottom;
     background-image: url("../image/eberhard-grossgasteiger-521851.jpg");
     /* Photo by eberhard grossgasteiger on Unsplash */
-    font-family: 'Crimson Text', serif;
     font-size: 18px;
 }
 
@@ -58,10 +59,11 @@ body {
 
 .wrapper header h1 {
     font-size: 70px;
+    font-family: var(--accent-font);
     font-weight: 400;
     margin: 0;
     padding: 15px 15px 15px 45px;
-}
+} 
 
 .wrapper header nav {
     margin-right: 25px;
@@ -98,14 +100,29 @@ body {
  */
 
 .contact {
-    display: inline-block;
-    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     margin: 8px;
-    padding: 9px 9px 4px 9px;
-    border-radius: 5px;
-    background-color: var(--dark-bg-color);
     color: var(--light-on-dark-color);
-    font-weight: 700;
+    font-family: var(--accent-font);
+}
+
+.contact > * {
+    padding: 4px 9px 4px 9px;
+    margin: 0;
+    background-color: var(--dark-bg-color);
+}
+
+.contact > *:first-child {
+    border-radius: 5px 0 0 5px;    
+    padding-right: 0;
+}
+
+.contact>*:last-child {
+    border-radius: 0 5px 5px 0;
+    padding-left: 0;
 }
 
 .contact .link {
