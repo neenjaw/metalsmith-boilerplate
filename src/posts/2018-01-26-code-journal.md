@@ -1,10 +1,9 @@
 ---
-title: Code Journal - Jan 26
+title: Code Journal
 layout: post.hbs
-description: Code Journal
+description: Jan 26
 date: 01-26-2018
 ---
-# Jan 26
 
 - Wes Bo's 30-day challenge - Day 2 [done]
 - Red hat OpenShift tutorials

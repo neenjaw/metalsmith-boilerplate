@@ -1,10 +1,9 @@
 ---
-title: Code Journal - Feb 5
+title: Code Journal
 layout: post.hbs
-description: Code Journal
+description: Feb 5
 date: 02-05-2018
 ---
-# Feb 5
 
 - Wes Bos 30-day challenge - Day 12 [done]
 - Lots of reading done re: webdev

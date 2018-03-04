@@ -1,10 +1,9 @@
 ---
-title: Code Journal - Feb 22
+title: Code Journal
 layout: post.hbs
-description: Code Journal
+description: Feb 22
 date: 02-22-2018
 ---
-# Feb 22
 
 - Wesbos 29
 - Neenjaw.com

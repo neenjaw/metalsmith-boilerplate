@@ -1,10 +1,9 @@
 ---
-title: Code Journal - Feb 12
+title: Code Journal
 layout: post.hbs
-description: Code Journal
+description: Feb 12
 date: 02-12-2018
 ---
-# Feb 12
 
 - Wes Bos 30-day challenge - day 19 [done]
 - Algorithm practice (Java and C++ -- Hackerrank)

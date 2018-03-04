@@ -1,10 +1,9 @@
 ---
-title: Code Journal - Jan 25
+title: Code Journal
 layout: post.hbs
-description: Code Journal
+description: Jan 25
 date: 01-25-2018
 ---
-# Jan 25
 
 - Start Wes Bos’ 30-day challenge - Day 1 [done]
 - RedHat Openshift Learning portal

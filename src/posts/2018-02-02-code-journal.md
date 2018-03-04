@@ -1,10 +1,9 @@
 ---
-title: Code Journal - Feb 2
+title: Code Journal
 layout: post.hbs
-description: Code Journal
+description: Feb 2
 date: 02-02-2018
 ---
-# Feb 2
 
 - Wes Bos 30-day challenge - Day 9 [done]
 - Udemy python course up to section 7

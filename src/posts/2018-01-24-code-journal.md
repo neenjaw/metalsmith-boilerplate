@@ -1,10 +1,9 @@
 ---
-title: Code Journal - Jan 24
+title: Code Journal
 layout: post.hbs
-description: Code Journal
+description: Jan 24
 date: 01-24-2018
 ---
-# Jan 24
 
 - Rebuild powershell env (touch and right click context menu shortcut)
 - Remake Mongo db cmd shortcuts to start the service.

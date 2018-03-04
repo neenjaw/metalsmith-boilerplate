@@ -1,10 +1,9 @@
 ---
-title: Code Journal - Feb 4
+title: Code Journal
 layout: post.hbs
-description: Code Journal
+description: Feb 4
 date: 02-04-2018
 ---
-# Feb 4
 
 - Messed around making a landing page for myself, deployed to netlify
 - Wes Bos 30-day challenge - Day 11 [done]

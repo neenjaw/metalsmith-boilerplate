@@ -1,10 +1,9 @@
 ---
-title: Code Journal - Feb 6
+title: Code Journal
 layout: post.hbs
-description: Code Journal
+description: Feb 6
 date: 02-06-2018
 ---
-# Feb 6
 
 - Wes Bos 30-day challenge - Day 13 [done]
 - Setting up eslint/jslint

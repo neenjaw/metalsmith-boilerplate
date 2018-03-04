@@ -1,10 +1,9 @@
 ---
-title: Code Journal - Feb 10
+title: Code Journal
 layout: post.hbs
-description: Code Journal
+description: Feb 10
 date: 02-10-2018
 ---
-# Feb 10
 
 - Wes Bos 30-day challenge - day 17 [done]
 - Wes Bos 30-day challenge - day 18 [done]

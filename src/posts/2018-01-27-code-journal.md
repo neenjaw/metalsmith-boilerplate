@@ -1,10 +1,9 @@
 ---
-title: Code Journal - Jan 27
+title: Code Journal
 layout: post.hbs
-description: Code Journal
+description: Jan 27
 date: 01-27-2018
 ---
-# Jan 27
 
 - Wes Bos’ 30-day challenge - Day 3 [done]
 - Lectures 268-275 -- [done] RESTful blog!

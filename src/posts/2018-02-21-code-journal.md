@@ -1,10 +1,9 @@
 ---
-title: Code Journal - Feb 21
+title: Code Journal
 layout: post.hbs
-description: Code Journal
+description: Feb 21
 date: 02-21-2018
 ---
-# Feb 21
 
 - Wesbos 26/27/28
 

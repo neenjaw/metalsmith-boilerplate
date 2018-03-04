@@ -1,10 +1,9 @@
 ---
-title: Code Journal - Feb 25
+title: Code Journal
 layout: post.hbs
-description: Code Journal
+description: Feb 25
 date: 02-25-2018
 ---
-# Feb 25
 
 - Finished the main yelp camp, now adding in the optional features
 - Admin panel is up and running

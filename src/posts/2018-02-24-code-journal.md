@@ -1,9 +1,8 @@
 ---
-title: Code Journal - Feb 24
+title: Code Journal
 layout: post.hbs
-description: Code Journal
+description: Feb 24
 date: 02-24-2018
 ---
-# Feb 24
 
 - Hammered out tons of Yelp Camp

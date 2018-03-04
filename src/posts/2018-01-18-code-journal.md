@@ -1,10 +1,9 @@
 ---
-title: Code Journal - Jan 18
+title: Code Journal
 layout: post.hbs
-description: Code Journal
+description: Jan 18
 date: 01-18-2018
 ---
-# Jan 18
 
 - Work through Wes Bos’s flexbox guide (currently video 13/20 or so)
 - start lecture 255 (web developer bootcamp)

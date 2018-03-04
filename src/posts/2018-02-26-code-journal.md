@@ -1,7 +1,7 @@
 ---
-title: Code Journal - Feb 26
+title: Code Journal
 layout: post.hbs
-description: Code Journal
+description: Feb 26
 date: 02-26-2018
 ---
 - Web dev bootcamp - Yelpcamp:
