@@ -70,6 +70,15 @@ body {
 .wrapper main {
     padding: 50px 45px;
     flex: 1;
+
+    display: flex;
+    flex-direction: column;
+    align-content: stretch;
+    justify-content: center;
+}
+
+.wrapper main > *:first-child {
+    flex: 1;
 }
 
 .wrapper footer {
