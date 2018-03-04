@@ -4,7 +4,7 @@ layout: post.hbs
 description: neenjaw.com now with static site generation
 date: 03-03-2018
 ---
-I have made some big progress updating the website's back end.  You'd probably notice nothing different from the look of things as they are now, but so much has changed on the back end.  I have now implemented [Metalsmith](https://metalsmith.io) which is a really neat little static site generator.  I think it may be past its prime, but has a well documented plugin system.
+I have made some big progress updating the website's back end.  You'd probably notice nothing different from the look of things as they are now, but so much has changed on the back end.  I have now implemented [Metalsmith](http://metalsmith.io) which is a really neat little static site generator.  I think it may be past its prime, but has a well documented plugin system.
 
 So now, as it is, neenjaw.com's content is generated from a set of markdown formatted pages, parsed, passed into a series of handlebars templates, then the html generated is saved.
 

@@ -8,7 +8,7 @@
         contactInactive = 'contact',
         contactActive = '<a href="mailto:tim@neenjaw.com?Subject=Got%20your%20contact%20from%20neenjaw.com">tim@neenjaw.com</a>';
 
-    //when the contact is clicked
+    //when the contact is moused over
     contact.addEventListener('mouseover', contactClickHandler);
 
     function contactClickHandler(event) {
@@ -26,7 +26,6 @@
 
     //when the contact transitions
     contact.addEventListener('transitionend', contactTransitionHandler);
-    // contact.addEventListener("transitionstart", contactTransitionHandler);
 
     function contactTransitionHandler(event) {
         //only change the link to the active text when the transtion ends and the active class is present

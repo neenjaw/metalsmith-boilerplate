@@ -10,7 +10,8 @@ gulp.task('serve', function () {
     });
 
     gulp.watch('./layouts/**/*.hbs', gulp.series('dev-makebuild'));
-    gulp.watch('./src/**/*.md', gulp.series('dev-makebuild'));
+    gulp.watch('./src/*.md', gulp.series('dev-makebuild'));
+    gulp.watch('./src/posts/*.md', gulp.series('dev-makebuild'));
     gulp.watch('./assets/**/*', gulp.series('dev-postbuild'));
     gulp.watch('./dist/**/*').on('change', browserSync.reload);
 });
