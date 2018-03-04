@@ -1,10 +1,9 @@
 ---
-title: Code Journal - Jan 22
+title: Code Journal
 layout: post.hbs
-description: Code Journal
+description: Jan 22
 date: 01-22-2018
 ---
-# Jan 22
 
 - Wes Bos’s flexbox video re: horizontal and vertical centering
 - Price flexbox

@@ -1,10 +1,9 @@
 ---
-title: Code Journal - Jan 23
+title: Code Journal
 layout: post.hbs
-description: Code Journal
+description: Jan 23
 date: 01-23-2018
 ---
-# Jan 23
 
 - Rebuilt computer with new motherboard to get rid of Asrock H110M-HDS
 - Finish Wes Bos’ Flexbox Video Guide

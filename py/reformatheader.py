@@ -23,7 +23,7 @@ for file in os.listdir('.'):
 
             if file_already_fixed:
                 print(line)
-                break
+                continue
 
             if line.startswith('title:'):
                 m = title_re.match(line)
@@ -31,7 +31,7 @@ for file in os.listdir('.'):
                 if not m:
                     file_already_fixed = True
                     print(line)
-                    break
+                    continue
 
                 dstr = m.group(1)
                 month = m.group(2)

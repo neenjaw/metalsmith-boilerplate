@@ -1,9 +1,8 @@
 ---
-title: Code Journal - Jan 20
+title: Code Journal
 layout: post.hbs
-description: Code Journal
+description: Jan 20
 date: 01-20-2018
 ---
-# Jan 20
 
 Long day at work, going to just look at the next section of wes bos’ flex box guide.

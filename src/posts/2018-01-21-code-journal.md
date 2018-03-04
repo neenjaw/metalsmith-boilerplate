@@ -1,10 +1,9 @@
 ---
-title: Code Journal - Jan 21
+title: Code Journal
 layout: post.hbs
-description: Code Journal
+description: Jan 21
 date: 01-21-2018
 ---
-# Jan 21
 
 - Look at the next section of the udemy course, lecture 258/259 to learn about mongoose.
 - How to add it to a node app
