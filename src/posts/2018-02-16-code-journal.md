@@ -1,9 +1,8 @@
 ---
-title: Code Journal - Feb 16
+title: Code Journal
 layout: post.hbs
-description: Code Journal
+description: Feb 16
 date: 02-16-2018
 ---
-# Feb 16
 
 - Wes bos - day 23

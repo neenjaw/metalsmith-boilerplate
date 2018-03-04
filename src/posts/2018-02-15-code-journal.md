@@ -1,10 +1,9 @@
 ---
-title: Code Journal - Feb 15
+title: Code Journal
 layout: post.hbs
-description: Code Journal
+description: Feb 15
 date: 02-15-2018
 ---
-# Feb 15
 
 - Wes Bos 30-day challenge - day 22
 - Webdev - up to 310

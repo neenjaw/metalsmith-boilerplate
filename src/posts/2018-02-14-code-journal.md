@@ -1,10 +1,9 @@
 ---
-title: Code Journal - Feb 14
+title: Code Journal
 layout: post.hbs
-description: Code Journal
+description: Feb 14
 date: 02-14-2018
 ---
-# Feb 14
 
 - Wes Bos 30-day challenge - day 21
 - Browser-sync (learned how to config)
