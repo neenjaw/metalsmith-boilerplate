@@ -1,0 +1,18 @@
+.blog-nav__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.blog-nav__button {
+    margin: 5px;
+    padding: 5px 5px 7px 5px;
+    border-radius: 3px;
+    color: white;
+    background-color: black;
+    text-decoration: none;
+}
+
+.blog-nav__wrapper .no-previous, .blog-nav__wrapper .no-next {
+    visibility: hidden;
+}

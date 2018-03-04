@@ -7,3 +7,9 @@
         {{/ each }}
     </ul>
 </nav> --}}
+
+<div class="blog-nav__wrapper">
+    <a class="blog-nav__button {{#if previous}}previous{{else}}no-previous{{/if}}" href="/{{previous.path}}">&lt; &lt; {{ dotdate previous.date}}</a>
+    <a class="blog-nav__button index" href="/blog-index/">index</a>
+    <a class="blog-nav__button {{#if next}}next{{else}}no-next{{/if}}" href="/{{next.path}}">{{ dotdate next.date}} &gt; &gt;</a>    
+</div>
