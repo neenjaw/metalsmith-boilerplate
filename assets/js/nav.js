@@ -3,7 +3,7 @@ const Nav = (function () {
     //reference vars
     const config = {
         nav: {
-            selector: '.nav__wrapper',
+            selector: '.nav__top',
             prop: {
                 width: '--dropdown-width',
                 height: '--dropdown-height',
@@ -14,15 +14,15 @@ const Nav = (function () {
         dropdowns: {
             selector: '.nav__items > li',
             class: {
-                enter: 'nav__enter',
-                active: 'nav__active',
+                enter: 'enter',
+                active: 'active',
             }
         },
         background: {
             selector: '.nav__background',
             class: {
-                open: 'nav__open',
-                active: 'nav__active'
+                open: 'open',
+                active: 'active'
             }
         }
     };

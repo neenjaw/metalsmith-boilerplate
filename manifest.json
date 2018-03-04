@@ -1,6 +1,6 @@
 {
-  "name": "Neenjaw.com",
-  "short_name": "Neenjaw",
+  "name": "Metalsmith setup for deploying on Netlify",
+  "short_name": "Metalsmith",
   "theme_color": "#583154",
   "background_color": "#583154",
   "display": "standalone",

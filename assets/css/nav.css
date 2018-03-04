@@ -108,11 +108,11 @@
     .nav__blog>li:last-child {
         padding-bottom: 15px;
     }
-    .nav__nav-items li:hover>.nav__dropdown.nav__links {
+    .nav__items li:hover>.nav__dropdown.nav__links {
         display: flex;
         flex-direction: row;
     }
-    .nav__nav-items li:hover>.nav__dropdown.nav__links>* {
+    .nav__items li:hover>.nav__dropdown.nav__links>* {
         flex-basis: 25%;
         text-align: center;
         padding: 15px;
@@ -127,7 +127,7 @@
 }
 
 @media screen and (min-width: 660px) {
-    .nav__wrapper {
+    nav {
         perspective: 600px;
     }
     .nav__items>li>a {
@@ -140,7 +140,7 @@
         margin: 20px;
         border-radius: 5px;
     }
-    .nav__wrapper ul {
+    nav ul {
         list-style: none;
         margin: 0;
         padding: 0;
@@ -164,10 +164,10 @@
         will-change: opacity;
         display: none;
     }
-    .nav__enter .nav__dropdown {
+    .enter .nav__dropdown {
         display: block;
     }
-    .nav__active .nav__dropdown {
+    .active .nav__dropdown {
         opacity: 1;
     }
     .nav__background {
@@ -183,14 +183,14 @@
         justify-content: center;
         opacity: 0;
     }
-    .nav__background.nav__open {
+    .nav__background.open {
         transition: all 0.1s linear, opacity 0.1s linear, transform 0.2s ease-in-out;
     }
-    .nav__background.nav__open.nav__active {
+    .nav__background.open.active {
         transform: rotateX(0deg) translate(var(--dropdown-left), var(--dropdown-top));
         opacity: 1;
     }
-    .nav__arrow {
+    .arrow {
         position: relative;
         /* z-index: 5; */
         height: 0;
