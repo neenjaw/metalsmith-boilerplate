@@ -151,6 +151,12 @@ body {
     width: 154px;
 }
 
+@media screen and (max-width: 470px) {
+    .contact {
+        padding-right: 0;
+    }
+}
+
 @keyframes link-font-fade {
     0% {
         color: var(--light-on-dark-color);
