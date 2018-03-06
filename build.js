@@ -57,11 +57,11 @@ Handlebars.registerHelper('is', function (value, test, options) {
 });
 
 Handlebars.registerHelper('date', function (date) {
-    return moment(date, 'MM-DD-YYYY').format('Do MMM \'YY');
+    return moment(date, 'MM-DD-YYYY').format('MMM Do \'YY');
 });
 
 Handlebars.registerHelper('dotdate', function (date) {
-    return moment(date, 'MM-DD-YYYY').format('YYYY . MM . DD');
+    return moment(date, 'MM-DD-YYYY').format('YYYY.MM.DD');
 });
 
 const ms = metalsmith(dir.base)

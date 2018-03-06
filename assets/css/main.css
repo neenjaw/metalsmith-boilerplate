@@ -71,11 +71,17 @@ body {
 }
 
 .wrapper main {
+    box-shadow: inset 0px 6px 8px -8px rgba(0, 0, 0, 0.75);
+
+    overflow-y: scroll;
+
+    border-top: 1px solid rgba(0,0,0,0.5);
     padding: 0px 45px 50px 45px;
     flex: 1;
 }
 
 .wrapper footer {
+
     text-align: center;
     background-color: rgba(0, 0, 0, 0.1);
 }
@@ -106,6 +112,8 @@ body {
     align-items: center;
 
     margin: 8px;
+    padding-right: 17px;
+
     color: var(--light-on-dark-color);
     font-family: var(--accent-font);
 }
