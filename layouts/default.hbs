@@ -2,22 +2,22 @@
 
 <body>
     <div class="wrapper">
-        {{> header }}
+{{> header }}
 
         <main>
             
             <div>
-                {{{ contents }}}
+{{{ contents }}}
 
                 <div>
-                    {{> post collections.lastPost.[0] }} 
-                    {{> blog-nav collections.lastPost.[0] }}
+{{> post collections.lastPost.[0] }} 
+{{> blog-nav collections.lastPost.[0] }}
                 </div>
             </div>
             
         </main>
 
-        {{> footer }}
+{{> footer }}
         
     </div>
 
