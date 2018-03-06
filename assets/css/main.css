@@ -37,6 +37,7 @@ body {
     background-position: center bottom;
     background-image: url("../image/eberhard-grossgasteiger-521851.jpg");
     /* Photo by eberhard grossgasteiger on Unsplash */
+    font-family: 'Open Sans', sans-serif;
     font-size: 18px;
 }
 
