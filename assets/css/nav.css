@@ -131,21 +131,28 @@
         perspective: 600px;
     }
     .nav__items>li>a {
-        color: var(--light-on-dark-color);
+        color: black; 
         text-decoration: none;
         font-size: 20px;
-        background: var(--dark-bg-color);
+        font-weight: 700;
+        background: transparent;
         padding: 10px 20px;
         display: inline-block;
-        margin: 20px;
+        margin: 20px 20px;
         border-radius: 5px;
+        transition: color 0.2s ease-in-out;
     }
+
+    .nav__items>li>a:hover {
+        color: rgba(0,0,0,0.6);
+    }
+
     nav ul {
         list-style: none;
         margin: 0;
         padding: 0;
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
     }
     .nav__items>li {
         position: relative;
@@ -157,7 +164,7 @@
         position: absolute;
         overflow: hidden;
         padding: 20px;
-        top: -20px;
+        top: -30px;
         border-radius: 2px;
         transition: all 0.5s;
         transform: translateY(100px);
@@ -181,6 +188,7 @@
         transform: rotateX(-30deg) translate(var(--dropdown-left), var(--dropdown-top));
         display: flex;
         justify-content: center;
+        align-items: flex-start;
         opacity: 0;
     }
     .nav__background.open {
@@ -190,23 +198,30 @@
         transform: rotateX(0deg) translate(var(--dropdown-left), var(--dropdown-top));
         opacity: 1;
     }
-    .arrow {
+
+    .nav__arrow {
         position: relative;
+
         /* z-index: 5; */
+
         height: 0;
         width: 0;
+
         /* box-shadow: 0 50px 100px rgba(50, 50, 93, .1), 0 15px 35px rgba(50, 50, 93, .15), 0 5px 15px rgba(0, 0, 0, .1); */
+
         border-left: 15px solid transparent;
         border-right: 15px solid transparent;
         border-bottom: 15px solid white;
         border-top: 15px solid transparent;
         transform: translateY(-30px);
+
         /* width: 30px;
         height: 30px;
         display: block;
         background: white;
         transform: translateY(-50%) rotate(45deg); */
     }
+
     .nav__bio {
         min-width: 350px;
         display: flex;

@@ -3,6 +3,8 @@
     --light-on-dark-accent: #61647a;
     --dark-bg-color: black;
     --dark-bg-accent: #333744;
+
+    --accent-font: 'Crimson Text', serif;
 }
 
 html {
@@ -35,7 +37,7 @@ body {
     background-position: center bottom;
     background-image: url("../image/eberhard-grossgasteiger-521851.jpg");
     /* Photo by eberhard grossgasteiger on Unsplash */
-    font-family: 'Crimson Text', serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 18px;
 }
 
@@ -58,9 +60,15 @@ body {
 
 .wrapper header h1 {
     font-size: 70px;
+    font-family: var(--accent-font);
     font-weight: 400;
     margin: 0;
     padding: 15px 15px 15px 45px;
+} 
+
+.wrapper .title a {
+    text-decoration: none;
+    color: inherit;
 }
 
 .wrapper header nav {
@@ -68,7 +76,12 @@ body {
 }
 
 .wrapper main {
-    padding: 50px 45px;
+    box-shadow: inset 0px 6px 8px -8px rgba(0, 0, 0, 0.75);
+
+    overflow-y: scroll;
+
+    border-top: 1px solid rgba(0,0,0,0.5);
+    padding: 0px 45px 50px 45px;
     flex: 1;
 
     display: flex;
@@ -82,6 +95,7 @@ body {
 }
 
 .wrapper footer {
+
     text-align: center;
     background-color: rgba(0, 0, 0, 0.1);
 }
@@ -107,14 +121,31 @@ body {
  */
 
 .contact {
-    display: inline-block;
-    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     margin: 8px;
-    padding: 9px 9px 4px 9px;
-    border-radius: 5px;
-    background-color: var(--dark-bg-color);
+    padding-right: 17px;
+
     color: var(--light-on-dark-color);
-    font-weight: 700;
+    font-family: var(--accent-font);
+}
+
+.contact > * {
+    padding: 4px 9px 4px 9px;
+    margin: 0;
+    background-color: var(--dark-bg-color);
+}
+
+.contact > *:first-child {
+    border-radius: 5px 0 0 5px;    
+    padding-right: 0;
+}
+
+.contact>*:last-child {
+    border-radius: 0 5px 5px 0;
+    padding-left: 0;
 }
 
 .contact .link {
@@ -132,6 +163,12 @@ body {
 .contact .link.link-active {
     animation: link-font-fade 0.4s;
     width: 154px;
+}
+
+@media screen and (max-width: 470px) {
+    .contact {
+        padding-right: 0;
+    }
 }
 
 @keyframes link-font-fade {

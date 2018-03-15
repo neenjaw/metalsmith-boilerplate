@@ -1,5 +1,3 @@
-from tempfile import mkstemp
-from shutil import move
 import os
 import re
 import fileinput

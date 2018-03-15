@@ -1,0 +1,36 @@
+.post__wrapper {
+    font-size: inherit;
+}
+.post__title {
+    font-size: 20px;
+    margin: 10px 0 5px 0;
+}
+.post__date {
+    float: right;
+    margin: 0;
+    font-size: 0.8rem;
+    color: #3d3d3d;
+}
+.post__desc {
+    margin: 0;
+    font-size: 0.8rem;
+    color: #3d3d3d;
+}
+.post__divider {
+    font-size: inherit;
+}
+.post__contents {
+    font-size: 16px;
+}
+
+.post__contents pre {
+    margin: 5px;
+    padding: 5px;
+    color: ghostwhite;
+    background-color: rgba(0,0,0,0.7);
+    font-size: 12px;
+    font-weight: 700;
+
+    word-wrap: break-word;
+    white-space: pre-wrap;
+}

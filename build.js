@@ -57,11 +57,11 @@ Handlebars.registerHelper('is', function (value, test, options) {
 });
 
 Handlebars.registerHelper('date', function (date) {
-    return moment(date, 'MM-DD-YYYY').format('Do MMM \'YY');
+    return moment(date, 'MM-DD-YYYY').format('MMM Do \'YY');
 });
 
 Handlebars.registerHelper('dotdate', function (date) {
-    return moment(date, 'MM-DD-YYYY').format('YYYY . MM . DD');
+    return moment(date, 'MM-DD-YYYY').format('YYYY.MM.DD');
 });
 
 const ms = metalsmith(dir.base)
@@ -76,15 +76,24 @@ const ms = metalsmith(dir.base)
             sortBy: 'date',
             reverse: true
         },
+        lastPost: {
+            pattern: 'posts/*.md',
+            sortBy: 'date',
+            limit: 1,
+            reverse: true,
+            refer: false
+        },
         lastPosts: {
             pattern: 'posts/*.md',
             sortBy: 'date',
             limit: 5,
-            reverse: true
+            reverse: true,
+            refer: false
         },
         pages: {
             pattern: '*.md',
-            sortBy: 'menu-order'
+            sortBy: 'menu-order',
+            refer: false
         }
     }))
     .use(markdown())
