@@ -2,7 +2,7 @@
 title: Code Journal
 layout: post.hbs
 description: Jan 24
-date: 01-24-2018
+date: 2018-01-24
 ---
 
 - Rebuild powershell env (touch and right click context menu shortcut)

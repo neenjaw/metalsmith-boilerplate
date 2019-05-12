@@ -2,8 +2,8 @@ import os
 import re
 import fileinput
 
-filename_re = re.compile('[0-9]{4}-[0-9]{2}-[0-9]{2}-code-journal\.md')
-title_re = re.compile('^title: Code Journal - ((Jan|Feb) ([0-9]{1,2}))$');
+filename_re = re.compile('[0-9]{4}-[0-9]{2}-[0-9]{2}.*\.md')
+title_re = re.compile('^date: ([0-9]{2})-([0-9]{2})-([0-9]{4})$');
 
 for file in os.listdir('.'):
     # file = '2018-01-23-code-journal.md'
@@ -23,7 +23,7 @@ for file in os.listdir('.'):
                 print(line)
                 continue
 
-            if line.startswith('title:'):
+            if line.startswith('date:'):
                 m = title_re.match(line)
 
                 if not m:
@@ -31,17 +31,17 @@ for file in os.listdir('.'):
                     print(line)
                     continue
 
-                dstr = m.group(1)
-                month = m.group(2)
-                dnum = m.group(3)
+                month = m.group(1)
+                day = m.group(2)
+                year = m.group(3)
 
-                print('title: Code Journal')
+                print(f"date: {year}-{month}-{day}")
 
-            elif line.startswith('description:'):
-                print('description: ' + dstr)
+            # elif line.startswith('description:'):
+            #     print('description: ' + dstr)
 
-            elif line.startswith('# ' + dstr):
-                pass
+            # elif line.startswith('# ' + dstr):
+            #     pass
 
             else:
                 print(line)

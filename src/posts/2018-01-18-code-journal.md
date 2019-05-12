@@ -2,7 +2,7 @@
 title: Code Journal
 layout: post.hbs
 description: Jan 18
-date: 01-18-2018
+date: 2018-01-18
 ---
 
 - Work through Wes Bos’s flexbox guide (currently video 13/20 or so)

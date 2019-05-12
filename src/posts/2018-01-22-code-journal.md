@@ -2,7 +2,7 @@
 title: Code Journal
 layout: post.hbs
 description: Jan 22
-date: 01-22-2018
+date: 2018-01-22
 ---
 
 - Wes Bos’s flexbox video re: horizontal and vertical centering

@@ -2,7 +2,7 @@
 title: Code Journal
 layout: post.hbs
 description: Feb 11
-date: 02-11-2018
+date: 2018-02-11
 ---
 
 I tried to get my head into some coding today but was just too exhausted coming off of night shift.  Did some reading about algorithms and whatnot instead.  There is so much out there, some of the links that I started reading are:

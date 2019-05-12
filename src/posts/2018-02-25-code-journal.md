@@ -2,7 +2,7 @@
 title: Code Journal
 layout: post.hbs
 description: Feb 25
-date: 02-25-2018
+date: 2018-02-25
 ---
 
 - Finished the main yelp camp, now adding in the optional features
