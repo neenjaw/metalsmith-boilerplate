@@ -2,7 +2,7 @@
 title: Code Journal
 layout: post.hbs
 description: Jan 21
-date: 01-21-2018
+date: 2018-01-21
 ---
 
 - Look at the next section of the udemy course, lecture 258/259 to learn about mongoose.

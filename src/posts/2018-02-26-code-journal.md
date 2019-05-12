@@ -2,7 +2,7 @@
 title: Code Journal
 layout: post.hbs
 description: Feb 26
-date: 02-26-2018
+date: 2018-02-26
 ---
 - Web dev bootcamp - Yelpcamp:
   - More work done on the user profiles

@@ -2,7 +2,7 @@
 title: Code Journal
 layout: post.hbs
 description: Jan 26
-date: 01-26-2018
+date: 2018-01-26
 ---
 
 - Wes Bo's 30-day challenge - Day 2 [done]

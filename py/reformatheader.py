@@ -3,7 +3,7 @@ import re
 import fileinput
 
 filename_re = re.compile('[0-9]{4}-[0-9]{2}-[0-9]{2}.*\.md')
-title_re = re.compile('^date: ?([0-9]{2})-([0-9]{2})-([0-9]{4})$');
+title_re = re.compile('^date: ([0-9]{2})-([0-9]{2})-([0-9]{4})$');
 
 for file in os.listdir('.'):
     # file = '2018-01-23-code-journal.md'
@@ -31,9 +31,9 @@ for file in os.listdir('.'):
                     print(line)
                     continue
 
-                year = m.group(1)
-                month = m.group(2)
-                day = m.group(3)
+                month = m.group(1)
+                day = m.group(2)
+                year = m.group(3)
 
                 print(f"date: {year}-{month}-{day}")
 

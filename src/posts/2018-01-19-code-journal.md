@@ -2,7 +2,7 @@
 title: Code Journal
 layout: post.hbs
 description: Jan 19
-date: 01-19-2018
+date: 2018-01-19
 ---
 
 Watched a brief talk about the state of .NET, and I’m interested in how popular C# is.  I have read about it’s popularity based on its performance, but never really used it myself.  Going to download Visual Studio so that given time I can hack together something simple with it.

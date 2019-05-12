@@ -2,7 +2,7 @@
 title: Website Overhaul!
 layout: post.hbs
 description: neenjaw.com now with static site generation
-date: 03-03-2018
+date: 2018-03-03
 ---
 I have made some big progress updating the website's back end.  You'd probably notice nothing different from the look of things as they are now, but so much has changed on the back end.  I have now implemented [Metalsmith](http://metalsmith.io) which is a really neat little static site generator.  I think it may be past its prime, but has a well documented plugin system.
 

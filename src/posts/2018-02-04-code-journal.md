@@ -2,7 +2,7 @@
 title: Code Journal
 layout: post.hbs
 description: Feb 4
-date: 02-04-2018
+date: 2018-02-04
 ---
 
 - Messed around making a landing page for myself, deployed to netlify
